@@ -16,9 +16,6 @@ concurrency:
 
 jobs:
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.github_pages.outputs.url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -37,7 +34,13 @@ jobs:
         run: npm run build
 
       - name: Setup Github Pages
+        id: github_pages
         uses: actions/configure-pages@v5
+
+      - name: Debug Deployment
+        run: |
+          echo "GitHub Pages URL: ${{ steps.github_pages.outputs.url }}"
+          env
 
       - name: Upload Dist Folder to Github Pages
         uses: actions/upload-pages-artifact@v3
