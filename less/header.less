@@ -1,0 +1,42 @@
+header {
+    display: flex;
+    background-color: @primary-color;
+    color: @primary-text-color;
+    align-items: center;
+    padding: 0.5rem 1rem;
+
+    img {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+    }
+
+    h1 {
+        margin: 0;
+        padding: 0 1rem;
+        font-size: 1.5rem;
+        text-shadow: 1px 1px 2px black;
+    }
+
+    nav {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+
+        ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+
+            li {
+                a {
+                    display: inline-block;
+                    padding: 0.5rem 1rem;
+                    color: @primary-text-color;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

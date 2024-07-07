@@ -1,0 +1,55 @@
+#contactame {
+    padding: @default-padding;
+    text-align: center;
+
+    form {
+        margin: 0 auto;
+        box-shadow: 3px 3px 5px #000;
+        padding: @default-padding;
+        max-width: 920px;
+        text-align: initial;
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        input,
+        textarea {
+            display: block;
+            min-width: 280px;
+            font-size: 1rem;
+            padding: 0.25rem 0.5rem;
+            border: none;
+            border-bottom: 1px solid #000;
+            margin-top: 0.25rem;
+        }
+    }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+
+    tr {
+        border-bottom: 1px solid #000;
+        text-align: center;
+
+        &:nth-child(even) {
+            background-color: #fcfc75;
+        }
+    }
+
+    td,
+    th {
+        padding: 0.25rem 0.5rem;
+    }
+
+    thead,
+    tfoot {
+        background-color: #000;
+        color: @primary-text-color;
+    }
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Portafolio de Proyectos</title>
+    <link rel="stylesheet" href="less/style.less" />
+</head>
+
+<body>
+    <header>
+        {{>header}}
+    </header>
+    <main>
+        <section id="sobremi">
+            <h2>Sobre Mí</h2>
+            <p>
+                Mi nombre completo es "Ramiro Antonio Galindo Williams", tengo una edad de 20 años, soy originario de la
+                cuidad de Choluteca, Departamento de Choluteca, Honduras.
+            </p>
+            <p>
+                Actualmente curso en la Universidad Católica de Honduras en la carrera de Ingeniería en Ciencias de la
+                Computación.
+            </p>
+
+            <hr />
+            <section>
+                <h3>Educación:</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Grado</th>
+                            <th>Institución</th>
+                            <th>Título</th>
+                            <th>Año</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Primaria</td>
+                            <td>Carrusel Bilingual School</td>
+                            <td>Preescolar y primaria</td>
+                            <td>2016</td>
+                        </tr>
+                        <tr>
+                            <td>Secundaria</td>
+                            <td>Cambridge School - St Joseph’s Campus</td>
+                            <td>Bachillerato en Ciencias y Humanidades</td>
+                            <td>2021</td>
+                        </tr>
+                        <tr>
+                            <td>Universidad</td>
+                            <td>Universidad Católica de Honduras</td>
+                            <td>Ingeniería en Ciencias de la Computación</td>
+                            <td>2025</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </section>
+
+        <section id="proyectos">
+            <h2>Proyectos Realizados</h2>
+            <section>
+                <section>
+                    <div class="card">
+                        <img src="img/Alarmacontraladrones.jpeg" alt="Imagen del Proyecto" />
+                        <h4>Arduino </br>Alarma contra ladrones</h4>
+                        <p>
+                            El proyecto se trata de una alarma que, al detectar
+                            movimiento, se enciende el LED amarillo; cuando se
+                            enciende la alarma, se enciende el LED verde y cuando está
+                            desactivada, el LED rojo.
+                            Para activar la alarma y encienda el LED verde, se debe
+                            ingresar una contraseña para que funcione.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="img/proyectohotel.jpeg" alt="Imagen del Proyecto" />
+                        <h4>C# </br>Aplicación para un Hotel</h4>
+                        <p>
+                            Trata de un aplicación de escritorio conectada a una base de datos que almacena los
+                            clientes, además verifica los cuartos disponibles y los cuales necesitan mantenimiento.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="img/bodegaguty.jpg" alt="Imagen del Proyecto" />
+                        <h4>HTML, CSS y JS </br>Página Web de una bodega</h4>
+                        <p>
+                            La página tiene como función principal el poder exhibir el negocio y todos los productos que
+                            la misma distribuye, adicionalmente tiene apartados para poder comunicarse de mejor manera
+                            con el cliente
+                        </p>
+                    </div>
+                </section>
+            </section>
+
+            <section id="contactame">
+                <h2>Contactame</h2>
+                <section>
+                    <form action="index.html" method="post">
+                        <label for="nombre">Nombre:
+                            <input type="text" name="nombre" id="nombre" required autocapitalize="on"
+                                placeholder="Ramiro Galindo" />
+                        </label>
+                        <label for="correo">Correo:
+                            <input type="email" name="correo" id="correo" required autocapitalize="off"
+                                placeholder="rama_galindo@unicah.edu" />
+                        </label>
+                        <label for="birthdate">
+                            Fecha de Nacimiento:
+                            <input type="date" name="birthdate" id="birthdate" required autocomplete="on" />
+                        </label>
+                        <label for="mensaje">Comentario:
+                            <textarea name="mensaje" id="mensaje" placeholder="Escriba un comentario"
+                                required></textarea>
+                        </label>
+                        <label for="color">
+                            Color Favorito:
+                            <input type="color" name="color" id="color" required />
+                        </label>
+                        <br />
+                        <button type="submit">Enviar</button>
+                    </form>
+                </section>
+
+                <footer>
+                    <section>
+                        <p>Ramiro Galindo &copy; 2024</p>
+                    </section>
+                    <section>
+                        <ol>
+                            <li><a href="https://www.facebook.com/r.galindo23" target="_blank">Facebook</a></li>
+                            <li><a href="https://x.com/rgalindo2004" target="_blank">X (late Twitter)</a></li>
+                            <li><a href="https://www.instagram.com/r.galindo23/" target="_blank">Instagram</a></li>
+                            <li><a href="https://www.tiktok.com/@rgalindo2302" target="_blank">TikTok</a></li>
+                        </ol>
+                    </section>
+                    <section>
+                        <nav>
+                            <ul>
+                                <li><a href="#sobremi">Sobre Mí</a></li>
+                                <li><a href="#proyectos">Mis Proyectos</a></li>
+                                <li><a href="#contactame">Contactame</a></li>
+                            </ul>
+                        </nav>
+                    </section>
+
+                </footer>
+</body>
+</html>

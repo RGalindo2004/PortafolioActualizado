@@ -1,0 +1,21 @@
+:root {
+    --primary-color: #3F51B5;
+    --primary-text-color: #fff;
+    --secondary-color: #FFF;
+    --secondary-text-color: #333;
+    --alternate-color: #FF5722;
+    --alternate-text-color: #FFF;
+    --default-padding: 1rem;
+    --base-4: 1rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin:0px;
+    padding:0px;
+    background-color: var(--secondary-color);
+    color: var(--secondary-text-color);
+}

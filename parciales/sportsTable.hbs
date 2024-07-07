@@ -1,0 +1,20 @@
+<table>
+    <thead>
+        <tr>
+            <th>Deporte</th>
+            <th>Descripción</th>
+            <th>Requiere</th>
+            <th>Ranking</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each contextSports}}
+        <tr>
+            <td>{{deporte}}</td>
+            <td>{{descripcion}}</td>
+            <td>{{requiere}}</td>
+            <td>{{{ranking}}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

@@ -1,0 +1,13 @@
+<h1>Portafolio de Ramiro Galindo</h1>
+<img src="img/fotodeperfil.jpeg" alt="Foto de Perfil" />
+<nav>
+    <ul>
+        {{#each menuOptions}}
+        <li>
+            <a href="{{url}}" class="{{#if active}}active{{/if}}">
+                {{label}}
+            </a>
+        </li>
+        {{/each}}
+    </ul>
+</nav>

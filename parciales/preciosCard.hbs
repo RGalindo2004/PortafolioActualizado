@@ -1,0 +1,13 @@
+<section class="precios">
+    {{#each precios}}
+    <div class="card">
+        <h3>{{titulo}}</h3>
+        <p>{{descripcion}}</p>
+        <img src="{{url}}">
+        <span>{{precio}}</span>
+        <form>
+            <button> Subscribe </button>
+        </form>
+    </div>
+    {{/each}}
+</section>
