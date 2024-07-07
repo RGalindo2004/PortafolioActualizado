@@ -43,7 +43,10 @@ jobs:
         run: cp -r path/to/compiled-css dist/
 
       - name: Setup Github Pages
+        id: github_pages
         uses: actions/configure-pages@v5
+        with:
+          target-folder: 'dist' 
 
       - name: Upload Dist Folder to Github Pages
         uses: actions/upload-pages-artifact@v3
