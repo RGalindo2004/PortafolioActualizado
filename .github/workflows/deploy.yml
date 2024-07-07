@@ -4,7 +4,6 @@ on:
   push:
     branches: ["main"]
   workflow_dispatch:
-
 permissions:
   contents: read
   pages: write
@@ -23,36 +22,21 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '14.x'
+          node-version: '20'
           cache: 'npm'
-
       - name: Install Dependencies
         run: npm install
-
-      - name: Compile LESS to CSS
-        run: npm run build:css
-
       - name: Build
         run: npm run build
-
-      - name: Copy Compiled CSS to Dist
-        run: cp -r path/to/compiled-css dist/
-
       - name: Setup Github Pages
-        id: github_pages
         uses: actions/configure-pages@v5
-        with:
-          target-folder: 'dist' 
-
       - name: Upload Dist Folder to Github Pages
         uses: actions/upload-pages-artifact@v3
         with:
           path: './dist'
-
       - name: Deploy to Github Pages
         id: deployment
         uses: actions/deploy-pages@v4
